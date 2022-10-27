@@ -1,5 +1,5 @@
 #include <iostream>
-#include "src/XPad/XPad.hpp"
+#include "src/XPad.hpp"
 
 int main() {
 

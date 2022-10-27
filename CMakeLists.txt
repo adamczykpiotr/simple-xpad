@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(simple-xpad
         main.cpp
-        src/XPad/XPad.cpp
-        src/XPad/XEvent.cpp)
+        src/XPad.cpp
+        src/XEvent.cpp)
