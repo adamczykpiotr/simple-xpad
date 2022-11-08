@@ -8,7 +8,7 @@ bool XPad::isActive() const {
 }
 
 /**
- * Attempts to connet to requested device
+ * Attempts to connect to requested device
  *
  * @param devicePath
  */
@@ -138,7 +138,7 @@ void XPad::initializeRumble() {
             {}
     };
 
-    // Intialize union variables
+    // Initialize union variables
     fx.u.rumble.strong_magnitude = 0x2000;
     fx.u.rumble.weak_magnitude = 0x2000;
 
