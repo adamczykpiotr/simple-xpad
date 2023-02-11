@@ -39,6 +39,10 @@ bool XPad::readEvent() {
     return bytes == sizeof(input_event);
 }
 
+/**
+ *
+ * @return
+ */
 XEvent XPad::getEvent() {
     return this->event;
 }
@@ -48,7 +52,7 @@ XEvent XPad::getEvent() {
  *
  * TODO: [Future] Switch to C++20 std::filesystem syntax
  */
-std::tuple<std::string, XPadType> XPad::getAvailableControllerPath() {
+std::tuple <std::string, XPadType> XPad::getAvailableControllerPath() {
     std::string basePath("/dev/input/");
     std::string devicePath;
     XPadType deviceType;
@@ -82,7 +86,8 @@ std::tuple<std::string, XPadType> XPad::getAvailableControllerPath() {
         std::string candidateVisibleName(rawCandidateVisibleName, candidateVisibleNameLength - 1);
 
         // Filter out non-xbox devices
-        if (candidateVisibleName.find("Xbox") == std::string::npos) {
+        if (candidateVisibleName.find("Xbox") == std::string::npos &&
+            candidateVisibleName.find("X-Box") == std::string::npos) {
             continue;
         }
 

@@ -9,6 +9,7 @@
 #include <string>
 #include <stdexcept>
 #include <tuple>
+#include <array>
 
 #include "XEvent.hpp"
 #include "XPadType.hpp"
