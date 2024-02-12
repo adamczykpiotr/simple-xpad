@@ -14,7 +14,7 @@ Supports both native (usb or wireless dongle) and Bluetooth modes.
 ## Supported & tested controllers
 * Rev 1914 (Red Xbox one controller)
   * [x] USB-C
-  * [ ] Dongle (not tested yet)
+  * [x] Dongle (behaves as USB-C)
   * [x] Bluetooth
 
 
